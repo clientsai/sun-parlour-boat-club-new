@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { defaultMetadata } from "@/lib/metadata";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -16,18 +17,7 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: "Sun Parlour Boat Club | LaSalle, Ontario",
-  description: "The Friendliest Club On The Lake. A premier power boating organization serving Southwest Ontario since the 1960s. Member of I-LYA, AYC, and IOBG.",
-  keywords: ["boat club", "yacht club", "LaSalle Ontario", "Detroit River", "Lake St Clair", "boating", "marina", "Holiday Harbour"],
-  authors: [{ name: "Sun Parlour Boat Club" }],
-  openGraph: {
-    title: "Sun Parlour Boat Club",
-    description: "The Friendliest Club On The Lake",
-    type: "website",
-    locale: "en_CA",
-  },
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,

@@ -1,0 +1,209 @@
+/**
+ * Editorial Design System Tokens
+ * Modernist, typographically-led system for interior pages
+ * Distinct from home page aesthetic - magazine-grade editorial feel
+ */
+
+:root {
+  /* ============================================
+     BASELINE GRID SYSTEM
+     ============================================ */
+  --baseline: 8px;
+  --baseline-2: calc(var(--baseline) * 2);
+  --baseline-3: calc(var(--baseline) * 3);
+  --baseline-4: calc(var(--baseline) * 4);
+  --baseline-5: calc(var(--baseline) * 5);
+  --baseline-6: calc(var(--baseline) * 6);
+  --baseline-8: calc(var(--baseline) * 8);
+  --baseline-10: calc(var(--baseline) * 10);
+  --baseline-12: calc(var(--baseline) * 12);
+  --baseline-16: calc(var(--baseline) * 16);
+
+  /* ============================================
+     TYPOGRAPHIC SCALE (Cap-height tuned with clamp)
+     ============================================ */
+  --fs-xxl: clamp(2.5rem, 4vw + 1rem, 4rem);      /* 40-64px */
+  --fs-xl: clamp(2rem, 3vw + 0.5rem, 3rem);       /* 32-48px */
+  --fs-l: clamp(1.5rem, 2vw + 0.5rem, 2.25rem);   /* 24-36px */
+  --fs-m: clamp(1.125rem, 1.5vw + 0.5rem, 1.5rem); /* 18-24px */
+  --fs-base: clamp(1rem, 1vw + 0.5rem, 1.125rem);  /* 16-18px */
+  --fs-s: clamp(0.875rem, 0.5vw + 0.5rem, 1rem);   /* 14-16px */
+  --fs-xs: clamp(0.75rem, 0.5vw + 0.25rem, 0.875rem); /* 12-14px */
+
+  /* ============================================
+     LINE HEIGHTS (Baseline aligned)
+     ============================================ */
+  --lh-tight: 1.2;
+  --lh-snug: 1.375;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.625;
+  --lh-loose: 1.75;
+
+  /* ============================================
+     MEASURE (Line lengths for optimal readability)
+     ============================================ */
+  --measure-prose: 70ch;
+  --measure-narrow: 58ch;
+  --measure-wide: 85ch;
+
+  /* ============================================
+     MONOCHROME COLOR SYSTEM
+     ============================================ */
+  --editorial-black: #0a0a0a;
+  --editorial-gray-900: #1a1a1a;
+  --editorial-gray-800: #2a2a2a;
+  --editorial-gray-700: #3a3a3a;
+  --editorial-gray-600: #5a5a5a;
+  --editorial-gray-500: #7a7a7a;
+  --editorial-gray-400: #9a9a9a;
+  --editorial-gray-300: #bfbfbf;
+  --editorial-gray-200: #e0e0e0;
+  --editorial-gray-100: #f5f5f5;
+  --editorial-white: #ffffff;
+
+  /* ============================================
+     EDITORIAL ACCENT (Single color for rules/links)
+     ============================================ */
+  --editorial-accent: #0047ab; /* Deep nautical blue */
+  --editorial-accent-hover: #003580;
+  --editorial-accent-light: rgba(0, 71, 171, 0.1);
+
+  /* ============================================
+     SEMANTIC COLORS
+     ============================================ */
+  --editorial-info: #0047ab;
+  --editorial-success: #2d5016;
+  --editorial-warn: #8b4513;
+  --editorial-neutral: var(--editorial-gray-600);
+
+  /* ============================================
+     HAIRLINE RULES
+     ============================================ */
+  --rule-color: currentColor;
+  --rule-opacity: 0.15;
+  --rule-width: 1px;
+
+  /* ============================================
+     SPACING SCALE (Baseline multiples)
+     ============================================ */
+  --space-xs: var(--baseline);
+  --space-s: var(--baseline-2);
+  --space-m: var(--baseline-3);
+  --space-l: var(--baseline-4);
+  --space-xl: var(--baseline-6);
+  --space-xxl: var(--baseline-8);
+  --space-xxxl: var(--baseline-12);
+
+  /* ============================================
+     CONTAINER WIDTHS
+     ============================================ */
+  --container-xs: 480px;
+  --container-s: 640px;
+  --container-m: 768px;
+  --container-l: 1024px;
+  --container-xl: 1280px;
+  --container-xxl: 1440px;
+
+  /* ============================================
+     BREAKPOINTS
+     ============================================ */
+  --bp-xs: 360px;
+  --bp-s: 600px;
+  --bp-m: 900px;
+  --bp-l: 1200px;
+  --bp-xl: 1440px;
+
+  /* ============================================
+     BORDER RADIUS (Minimal)
+     ============================================ */
+  --radius-none: 0;
+  --radius-micro: 2px;
+
+  /* ============================================
+     TRANSITIONS
+     ============================================ */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ============================================
+     Z-INDEX SCALE
+     ============================================ */
+  --z-base: 1;
+  --z-elevated: 10;
+  --z-sticky: 100;
+  --z-fixed: 1000;
+  --z-modal: 10000;
+
+  /* ============================================
+     FONT STACKS
+     ============================================ */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+
+  /* ============================================
+     FONT WEIGHTS
+     ============================================ */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ============================================
+     LETTER SPACING
+     ============================================ */
+  --ls-tight: -0.02em;
+  --ls-normal: 0;
+  --ls-wide: 0.05em;
+  --ls-wider: 0.1em;
+
+  /* ============================================
+     FOCUS RING
+     ============================================ */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: var(--editorial-accent);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+    --transition-slow: 0ms;
+  }
+}
+
+/* ============================================
+   HIGH CONTRAST MODE
+   ============================================ */
+@media (prefers-contrast: more) {
+  :root {
+    --rule-opacity: 0.3;
+    --editorial-gray-300: #a0a0a0;
+    --editorial-gray-400: #808080;
+  }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --editorial-black: #ffffff;
+    --editorial-white: #0a0a0a;
+    --editorial-gray-900: #f5f5f5;
+    --editorial-gray-800: #e0e0e0;
+    --editorial-gray-700: #bfbfbf;
+    --editorial-gray-600: #9a9a9a;
+    --editorial-gray-500: #7a7a7a;
+    --editorial-gray-400: #5a5a5a;
+    --editorial-gray-300: #3a3a3a;
+    --editorial-gray-200: #2a2a2a;
+    --editorial-gray-100: #1a1a1a;
+  }
+}

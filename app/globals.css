@@ -67,4 +67,141 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* ============================================
+     JONY IVE APPROVED ANIMATIONS
+     Subtle, purposeful, respects reduced motion
+     ============================================ */
+  
+  /* Fade In Animation */
+  .fade-in {
+    opacity: 0;
+    transition: opacity var(--fade-duration, 800ms) cubic-bezier(0.4, 0, 0.2, 1) var(--fade-delay, 0ms);
+  }
+  
+  .fade-in-visible {
+    opacity: 1;
+  }
+  
+  /* Slide In Animations */
+  .slide-in {
+    opacity: 0;
+    transition: 
+      opacity var(--slide-duration, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--slide-delay, 0ms),
+      transform var(--slide-duration, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--slide-delay, 0ms);
+  }
+  
+  .slide-in-up {
+    transform: translateY(24px);
+  }
+  
+  .slide-in-down {
+    transform: translateY(-24px);
+  }
+  
+  .slide-in-left {
+    transform: translateX(24px);
+  }
+  
+  .slide-in-right {
+    transform: translateX(-24px);
+  }
+  
+  .slide-in-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+  /* Hero SVG Styles */
+  .hero-svg {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    color: var(--nautical-navy-900);
+    opacity: 0;
+    animation: fadeInSVG 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+  }
+  
+  @keyframes fadeInSVG {
+    from {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .hero-svg .sailboat {
+    animation: gentleFloat 6s ease-in-out infinite;
+  }
+  
+  @keyframes gentleFloat {
+    0%, 100% {
+      transform: translate(600px, 250px) translateY(0px);
+    }
+    50% {
+      transform: translate(600px, 250px) translateY(-3px);
+    }
+  }
+  
+  /* Premium Micro-interactions */
+  .premium-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .premium-hover:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Smooth page transitions */
+  @keyframes pageEnter {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  main {
+    animation: pageEnter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Focus states - premium and accessible */
+  *:focus-visible {
+    outline: 2px solid var(--nautical-ocean-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .slide-in,
+    .hero-svg,
+    .premium-hover,
+    main {
+      animation: none !important;
+      transition: none !important;
+    }
+    
+    .fade-in,
+    .slide-in {
+      opacity: 1;
+      transform: none;
+    }
+    
+    .hero-svg {
+      opacity: 1;
+      transform: none;
+    }
+    
+    .hero-svg .sailboat {
+      animation: none;
+    }
+  }
 }

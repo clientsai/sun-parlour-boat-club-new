@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import { Anchor, Calendar, Users, Ship, Award, MapPin } from 'lucide-react';
+import { HeroSVG } from '@/components/HeroSVG';
 
 export default function Home() {
   return (
     <div className="pt-20">
       <section className="relative bg-gradient-to-br from-nautical-navy-900 via-nautical-navy-800 to-nautical-ocean-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/waves.svg')] opacity-10" />
+        <div className="absolute inset-0 opacity-30">
+          <HeroSVG />
+        </div>
         <div className="container-custom section-padding relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-nautical-gold-400/20 backdrop-blur-sm mb-6">
