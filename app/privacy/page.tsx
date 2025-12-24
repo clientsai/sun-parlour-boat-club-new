@@ -1,4 +1,5 @@
-import { Shield } from 'lucide-react';
+import Link from 'next/link';
+import { Shield, Eye, Lock, Mail, FileText } from 'lucide-react';
 
 export default function PrivacyPage() {
   return (
@@ -11,7 +12,7 @@ export default function PrivacyPage() {
             </div>
             <h1 className="heading-xl text-white">Privacy Policy</h1>
             <p className="text-xl text-nautical-navy-100 leading-relaxed">
-              How we protect your information and respect your privacy.
+              How we handle your information. Simple and clear.
             </p>
           </div>
         </div>
@@ -20,117 +21,195 @@ export default function PrivacyPage() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-12">
-            <div className="card p-8 bg-nautical-sand-50">
-              <p className="text-body">
-                <strong>Last Updated:</strong> December 2024
-              </p>
-              <p className="text-body mt-4">
-                Sun Parlour Boat Club respects your privacy. This policy explains what information we collect and how we use it.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">What Information We Collect</h2>
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Member Information</h3>
-                <p className="text-body">
-                  When you join our club, we collect basic information: your name, address, phone number, and email. We need this to communicate with you about events and club business.
-                </p>
-                <p className="text-body">
-                  If you own a boat, we collect boat details: name, size, and registration number. This helps us with docking and insurance requirements.
-                </p>
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Eye className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">What Information We Collect</h2>
               </div>
-
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Website Information</h3>
-                <p className="text-body">
-                  Our website may collect basic information when you visit: your IP address, browser type, and pages you view. This helps us improve the website.
+              <div className="space-y-4 text-body">
+                <p>
+                  When you join Sun Parlour Boat Club, we collect basic information:
                 </p>
-                <p className="text-body">
-                  We don't use tracking cookies or sell your data to anyone.
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Your name</li>
+                  <li>Your address</li>
+                  <li>Your phone number</li>
+                  <li>Your email address</li>
+                  <li>Boat information (if you have a boat)</li>
+                  <li>Emergency contact information</li>
+                </ul>
+                <p>
+                  We need this information to manage your membership and contact you about club activities.
                 </p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">How We Use Your Information</h2>
-              <div className="card p-8 space-y-4">
-                <ul className="space-y-3">
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-nautical-ocean-500 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-body">Send you information about club events and activities</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-nautical-ocean-500 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-body">Process your membership and renewals</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-nautical-ocean-500 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-body">Coordinate docking at our marina and reciprocal clubs</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-nautical-ocean-500 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-body">Publish our member directory (name and boat info only)</span>
-                  </li>
-                  <li className="flex items-start space-x-3">
-                    <span className="w-2 h-2 bg-nautical-ocean-500 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-body">Share your information with I-LYA, AYC, and IOBG as required for reciprocal privileges</span>
-                  </li>
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Lock className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">How We Use Your Information</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  We use your information for these purposes only:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>To manage your membership</li>
+                  <li>To send you information about club events</li>
+                  <li>To send you the monthly newsletter</li>
+                  <li>To contact you in emergencies</li>
+                  <li>To share your contact info with other members (name and boat info only)</li>
+                  <li>To provide your information to I-LYA and AYC for reciprocal docking</li>
+                </ul>
+                <p>
+                  We do not sell your information. We do not share it with anyone except as described above.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Mail className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Email Communications</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  As a member, you will receive emails from us:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Event announcements</li>
+                  <li>Monthly newsletter</li>
+                  <li>Important club updates</li>
+                  <li>Emergency notifications</li>
+                </ul>
+                <p>
+                  You can ask us to remove you from our email list at any time. Just send us an email.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <FileText className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Member Directory</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  We maintain a member directory that includes:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Member names</li>
+                  <li>Boat names and types</li>
+                  <li>Phone numbers (if you agree)</li>
+                  <li>Email addresses (if you agree)</li>
+                </ul>
+                <p>
+                  This directory is only shared with other club members. It helps members connect with each other.
+                </p>
+                <p>
+                  You can ask us not to include your contact information in the directory. Just let us know.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Shield className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">How We Protect Your Information</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  We take reasonable steps to protect your information:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>We store member information securely</li>
+                  <li>We limit who has access to member information</li>
+                  <li>We do not post personal information publicly</li>
+                  <li>We use secure email when sending sensitive information</li>
                 </ul>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">How We Protect Your Information</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  We keep your information secure. Only club officers have access to member data. We don't share your information with outside companies or marketers.
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Eye className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Website Information</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  Our website does not collect personal information unless you send it to us.
                 </p>
-                <p className="text-body">
-                  Your email address is used only for club communications. We don't sell or rent our member list.
+                <p>
+                  We do not use cookies. We do not track your browsing. We do not collect analytics.
+                </p>
+                <p>
+                  If you email us through the website, we will have your email address. We will only use it to respond to you.
                 </p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">Photos and Social Media</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  We take photos at club events. These may be posted on our website, in our newsletter, or on social media. If you don't want your photo used, please tell us.
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <FileText className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Your Rights</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  You have the right to:
                 </p>
-                <p className="text-body">
-                  We respect your privacy. If you see a photo of yourself that you want removed, contact any officer and we'll take it down.
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>See what information we have about you</li>
+                  <li>Ask us to correct wrong information</li>
+                  <li>Ask us to remove you from our email list</li>
+                  <li>Ask us not to share your information in the member directory</li>
+                  <li>Ask us to delete your information when you leave the club</li>
+                </ul>
+                <p>
+                  To exercise these rights, contact us at spbc2005@bell.net
                 </p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">Your Rights</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  You can ask to see what information we have about you. You can ask us to correct or delete your information. You can opt out of emails anytime.
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Mail className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Questions About Privacy</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  If you have questions about how we handle your information, contact us:
                 </p>
-                <p className="text-body">
-                  Contact our Secretary to update or remove your information.
+                <p>
+                  Email: <a href="mailto:spbc2005@bell.net" className="text-nautical-ocean-600 hover:text-nautical-ocean-700 font-medium">spbc2005@bell.net</a>
+                </p>
+                <p>
+                  Phone: <a href="tel:+15197346679" className="text-nautical-ocean-600 hover:text-nautical-ocean-700 font-medium">(519) 734-6679</a>
                 </p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">Changes to This Policy</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  We may update this policy occasionally. We'll post changes on this page. Major changes will be announced in our newsletter.
-                </p>
-              </div>
-            </div>
-
-            <div className="card p-8 bg-nautical-ocean-50 border-nautical-ocean-200">
-              <h2 className="text-xl font-semibold text-nautical-navy-900 mb-4">Questions?</h2>
-              <p className="text-body">
-                If you have questions about this privacy policy or how we handle your information, contact our Secretary or any club officer. We're happy to explain.
+            <div className="card p-8 space-y-4 bg-nautical-sand-50">
+              <p className="text-sm text-nautical-navy-700">
+                <strong>Last Updated:</strong> December 2025
+              </p>
+              <p className="text-sm text-nautical-navy-700">
+                We may update this privacy policy from time to time. We will notify members of any major changes.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-nautical-sand-50">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="heading-lg">Have Questions?</h2>
+            <p className="text-body">
+              We're happy to explain our privacy practices in more detail.
+            </p>
+            <Link href="/contact" className="btn-primary">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>

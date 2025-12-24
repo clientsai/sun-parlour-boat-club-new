@@ -1,5 +1,5 @@
-import { FileText } from 'lucide-react';
 import Link from 'next/link';
+import { FileText, CheckCircle, AlertCircle, Users, Ship } from 'lucide-react';
 
 export default function TermsPage() {
   return (
@@ -12,7 +12,7 @@ export default function TermsPage() {
             </div>
             <h1 className="heading-xl text-white">Terms of Service</h1>
             <p className="text-xl text-nautical-navy-100 leading-relaxed">
-              Club rules and membership terms explained in simple language.
+              The rules for using our website and being a member. Simple and fair.
             </p>
           </div>
         </div>
@@ -21,176 +21,211 @@ export default function TermsPage() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-12">
-            <div className="card p-8 bg-nautical-sand-50">
-              <p className="text-body">
-                <strong>Last Updated:</strong> December 2024
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <FileText className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Website Use</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  This website is for information about Sun Parlour Boat Club. You can:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Read about the club</li>
+                  <li>View event information</li>
+                  <li>Download membership forms</li>
+                  <li>Contact us</li>
+                </ul>
+                <p>
+                  You cannot:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Copy our content without permission</li>
+                  <li>Use our website for illegal purposes</li>
+                  <li>Try to hack or damage the website</li>
+                  <li>Pretend to be the club or a club member</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Users className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Membership Rules</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  When you become a member, you agree to:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Pay your membership fees on time</li>
+                  <li>Follow club rules and bylaws</li>
+                  <li>Treat other members with respect</li>
+                  <li>Follow safe boating practices</li>
+                  <li>Represent the club well when visiting other clubs</li>
+                </ul>
+                <p>
+                  The club can end your membership if you:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Do not pay your fees</li>
+                  <li>Break club rules</li>
+                  <li>Behave badly at club events</li>
+                  <li>Damage the club's reputation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <Ship className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Reciprocal Docking</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  When using reciprocal docking at other clubs:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Always call ahead to make arrangements</li>
+                  <li>Follow the host club's rules</li>
+                  <li>Be respectful of their facilities</li>
+                  <li>Pay any fees they require</li>
+                  <li>Thank them for their hospitality</li>
+                </ul>
+                <p>
+                  Remember: You represent Sun Parlour Boat Club when you visit other clubs. Your behavior affects all our members.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <AlertCircle className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Liability</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  Important: Boating has risks. You are responsible for your own safety.
+                </p>
+                <p>
+                  Sun Parlour Boat Club and its officers are not responsible for:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Accidents or injuries at club events</li>
+                  <li>Damage to your boat</li>
+                  <li>Problems at other clubs you visit</li>
+                  <li>Weather-related issues</li>
+                  <li>Your boating decisions</li>
+                </ul>
+                <p>
+                  You should have your own boat insurance. You should follow all boating safety rules. You should use good judgment.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <CheckCircle className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Event Participation</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  When you attend club events:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>You participate at your own risk</li>
+                  <li>You are responsible for your guests</li>
+                  <li>You must follow event rules and instructions</li>
+                  <li>You may be photographed (photos may be shared)</li>
+                  <li>You should report any safety concerns to club officers</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <FileText className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Content and Photos</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  Photos and content on this website belong to Sun Parlour Boat Club or its members.
+                </p>
+                <p>
+                  If you submit photos or content to the club:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>You give us permission to use it</li>
+                  <li>You confirm you have the right to share it</li>
+                  <li>You agree we can post it on our website or social media</li>
+                </ul>
+                <p>
+                  If you want a photo removed, contact us and we will remove it.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <AlertCircle className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Disclaimer</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  We try to keep information on this website accurate and up to date. However:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Information may change without notice</li>
+                  <li>We are not responsible for outdated information</li>
+                  <li>Links to other websites are provided as a courtesy</li>
+                  <li>We are not responsible for content on other websites</li>
+                </ul>
+                <p>
+                  Always verify important information directly with club officers.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-6">
+              <div className="flex items-center space-x-4">
+                <FileText className="w-8 h-8 text-nautical-ocean-600" />
+                <h2 className="heading-md">Changes to Terms</h2>
+              </div>
+              <div className="space-y-4 text-body">
+                <p>
+                  We may update these terms from time to time. We will notify members of major changes.
+                </p>
+                <p>
+                  By continuing to use the website or maintain your membership after changes, you agree to the new terms.
+                </p>
+              </div>
+            </div>
+
+            <div className="card p-8 space-y-4 bg-nautical-sand-50">
+              <p className="text-sm text-nautical-navy-700">
+                <strong>Last Updated:</strong> December 2025
               </p>
-              <p className="text-body mt-4">
-                These terms explain how Sun Parlour Boat Club works and what we expect from members. By joining, you agree to follow these rules.
+              <p className="text-sm text-nautical-navy-700">
+                These terms are governed by the laws of Ontario, Canada.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="space-y-6">
-              <h2 className="heading-md">Membership</h2>
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Who Can Join</h3>
-                <p className="text-body">
-                  Anyone who enjoys boating can apply for membership. You don't need to own a boat. We welcome powerboats and sailboats of all sizes.
-                </p>
-                <p className="text-body">
-                  New members must be approved by the club officers. We want to make sure everyone fits with our friendly, family-oriented culture.
-                </p>
-              </div>
-
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Membership Fees</h3>
-                <p className="text-body">
-                  Annual membership fees are due each year. The exact amount is set by the club officers and may change. Current rates are available from our Membership Chairperson.
-                </p>
-                <p className="text-body">
-                  If you don't pay your fees, your membership will be suspended. You'll lose access to reciprocal docking and club events until you pay.
-                </p>
-              </div>
-
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Membership Benefits</h3>
-                <p className="text-body">
-                  Members get access to 132 reciprocal clubs, invitations to all club events, the monthly Ship's Log newsletter, and voting rights in club decisions.
-                </p>
-                <p className="text-body">
-                  Your membership is personal. You can't transfer it to someone else or share it with non-family members.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Conduct and Behavior</h2>
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Expected Behavior</h3>
-                <p className="text-body">
-                  Be respectful to other members, marina staff, and visitors. We're a friendly club and we expect everyone to act that way.
-                </p>
-                <p className="text-body">
-                  Follow all boating laws and regulations. Obey no-wake zones. Don't drink and drive your boat. Be a responsible boater.
-                </p>
-                <p className="text-body">
-                  At club events, behave appropriately. We're a family club, so keep language and behavior family-friendly.
-                </p>
-              </div>
-
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Violations</h3>
-                <p className="text-body">
-                  If you break club rules or behave badly, the officers can suspend or terminate your membership. Serious violations like illegal activity or dangerous behavior will result in immediate removal.
-                </p>
-                <p className="text-body">
-                  We want everyone to have fun, but safety and respect come first.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Reciprocal Docking</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  Reciprocal docking is a privilege, not a right. Other clubs can refuse docking if they're full or if you don't follow their rules.
-                </p>
-                <p className="text-body">
-                  Always contact clubs in advance to reserve a spot. Follow their check-in procedures. Pay any fees they charge. Treat their facilities with respect.
-                </p>
-                <p className="text-body">
-                  If you cause problems at another club, it reflects badly on all of us. Bad behavior can result in loss of reciprocal privileges for everyone.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Events and Activities</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  Club events are for members and their invited guests. Some events have fees to cover costs. Register by the deadline or you might not get a spot.
-                </p>
-                <p className="text-body">
-                  If you sign up for an event and can't make it, let us know as soon as possible. Last-minute cancellations may not get refunds.
-                </p>
-                <p className="text-body">
-                  At events, follow the organizer's instructions. Help clean up. Be considerate of others.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Liability and Insurance</h2>
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Your Responsibility</h3>
-                <p className="text-body">
-                  You're responsible for your own safety and your boat. The club is not liable for accidents, injuries, or damage to your property.
-                </p>
-                <p className="text-body">
-                  You must have proper boat insurance. The club doesn't insure your boat or cover your accidents.
-                </p>
-                <p className="text-body">
-                  When you participate in club events, you do so at your own risk. We recommend you have personal liability insurance.
-                </p>
-              </div>
-
-              <div className="card p-8 space-y-4">
-                <h3 className="text-xl font-semibold text-nautical-navy-900">Waiver</h3>
-                <p className="text-body">
-                  By joining the club, you agree not to sue the club, its officers, or other members for accidents or injuries that happen during club activities.
-                </p>
-                <p className="text-body">
-                  This doesn't apply if someone is intentionally reckless or breaks the law.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Website and Communications</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  Our website is for information only. We try to keep it accurate, but details may change. Always confirm event details with an officer.
-                </p>
-                <p className="text-body">
-                  By joining, you agree to receive emails from the club about events and important information. You can unsubscribe from non-essential emails anytime.
-                </p>
-                <p className="text-body">
-                  Don't use the member directory for commercial purposes or spam. It's for club communication only.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Changes to Terms</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  The club can change these terms at any time. We'll announce major changes in the Ship's Log newsletter. Continuing your membership means you accept the new terms.
-                </p>
-                <p className="text-body">
-                  If you don't agree with changes, you can resign your membership and get a prorated refund of your dues.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <h2 className="heading-md">Termination</h2>
-              <div className="card p-8 space-y-4">
-                <p className="text-body">
-                  You can cancel your membership anytime by notifying the Secretary. There are no refunds for partial years unless there are special circumstances.
-                </p>
-                <p className="text-body">
-                  The club can terminate your membership for non-payment of dues, violation of rules, or behavior that harms the club's reputation.
-                </p>
-              </div>
-            </div>
-
-            <div className="card p-8 bg-nautical-ocean-50 border-nautical-ocean-200">
-              <h2 className="text-xl font-semibold text-nautical-navy-900 mb-4">Questions About These Terms?</h2>
-              <p className="text-body mb-6">
-                If anything is unclear, contact any club officer. We're happy to explain. These terms are meant to protect everyone and keep the club running smoothly.
-              </p>
-              <Link href="/contact" className="btn-secondary">
+      <section className="section-padding bg-nautical-sand-50">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="heading-lg">Questions About These Terms?</h2>
+            <p className="text-body">
+              If you have questions about these terms, contact us. We're happy to explain.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact" className="btn-primary">
                 Contact Us
+              </Link>
+              <Link href="/faq" className="btn-secondary">
+                View FAQ
               </Link>
             </div>
           </div>

@@ -8,12 +8,12 @@ import { cn } from '@/lib/utils';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Membership', href: '/membership' },
   { name: 'Events', href: '/events' },
+  { name: 'Membership', href: '/membership' },
   { name: 'Docking', href: '/docking' },
-  { name: 'Getting Started', href: '/getting-started' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Gallery', href: '/gallery' },
   { name: 'FAQ', href: '/faq' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
