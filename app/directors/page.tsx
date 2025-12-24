@@ -4,15 +4,15 @@ import { formatPhoneNumber } from '@/lib/utils';
 const flagOfficers = [
   {
     title: 'Commodore',
-    name: 'PC Chris Amlin',
-    email: 'spbc2005@bell.net',
-    phone: '(519) 818-7050',
-  },
-  {
-    title: 'Vice-Commodore',
     name: 'Scott Pillon',
     email: 'moldlogic@gmail.com',
     phone: '(519) 980-6357',
+  },
+  {
+    title: 'Vice-Commodore',
+    name: 'PC Chris Amlin',
+    email: 'spbc2005@bell.net',
+    phone: '(519) 818-7050',
   },
   {
     title: 'Rear-Commodore',

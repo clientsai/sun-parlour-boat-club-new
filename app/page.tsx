@@ -94,16 +94,19 @@ export default function Home() {
               <h2 className="heading-lg">Welcome to SPBC</h2>
               <div className="space-y-4 text-body">
                 <p>
-                  Sun Parlour Boat Club was organized in the 1960s by a group of local boating enthusiasts with a common interest in family size outboard motor racing. Although the exact date of the Club's beginning is uncertain, our first recorded meeting was in March of 1968 with our 1st Commodore being Jerry Rice who served two terms. Over the years the Club has evolved and currently resides at Holiday Harbour Marina in LaSalle, Ontario.
+                  Welcome to Sun Parlour Boat Club! We started in the 1960s as a group of friends who loved boats. Today, we're based at Holiday Harbour Marina in LaSalle, Ontario.
                 </p>
                 <p>
-                  Today SPBC is a proud Member of Inter-Lake Yachting Association, the Associated Yacht Club and the International Order of Blue Gavel. We promote safe boating, camaraderie among the boating community and provide activities for our members, both on the water and land. Sun Parlour Boat Club offers its membership the ability to access approximately 132 Clubs that reside on Lake Erie, the Detroit River and Lake St Clair. These activities include various sail racing events, poker runs, dining and entertainment. Friendships that are made with the members of our affiliated Clubs, are more often than not, lifetime.
+                  Here's what we do: We help you visit 132 other boat clubs on Lake Erie, the Detroit River, and Lake St. Clair. You can join poker runs, go to dinners, race sailboats, and meet great people. Many friendships you make here last a lifetime.
                 </p>
                 <p>
-                  In addition to our water activities, we want to ensure that boating and the Club continues to grow. As such, we are a family friendly Club. In 2025 we are working on activities on land and water that can be enjoyed by our children and grandchildren.
+                  We're a family club. Kids and grandkids are welcome. We plan fun things to do on the water and on land all year long.
                 </p>
                 <p>
-                  It doesn't matter whether you own a small or large vessel, run power or sail, or have no boat at all, Sun Parlour Boat Club offers great value to its Membership and to the community that we reside in.
+                  You don't need a boat to join. Big boat, small boat, or no boat - everyone is welcome here. We're just a group of people who enjoy being on the water and having a good time together.
+                </p>
+                <p>
+                  Come join us. You'll be glad you did.
                 </p>
               </div>
               <div className="pt-4">
@@ -111,7 +114,7 @@ export default function Home() {
                   Sincerely,
                 </p>
                 <p className="text-lg font-serif text-nautical-navy-700">
-                  Chris Amlin
+                  Scott Pillon
                 </p>
                 <p className="text-sm text-nautical-navy-600">
                   2025 Commodore
