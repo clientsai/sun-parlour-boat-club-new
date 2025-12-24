@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="pt-20">
       <section className="relative bg-gradient-to-br from-nautical-navy-900 via-nautical-navy-800 to-nautical-ocean-900 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 opacity-50">
           <HeroSVG />
         </div>
         <div className="container-custom section-padding relative z-10">
