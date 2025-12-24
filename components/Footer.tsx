@@ -5,6 +5,7 @@ const footerNavigation = {
   club: [
     { name: 'About Us', href: '/about' },
     { name: 'Membership', href: '/membership' },
+    { name: 'Getting Started', href: '/getting-started' },
     { name: 'Directors', href: '/directors' },
     { name: 'Past Commodores', href: '/past-commodores' },
   ],
@@ -19,6 +20,12 @@ const footerNavigation = {
     { name: 'Photo Gallery', href: '/gallery' },
     { name: 'Regalia', href: '/regalia' },
     { name: 'Links', href: '/resources' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/contact' },
+  ],
+  legal: [
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Terms of Service', href: '/terms' },
   ],
 };
 
@@ -126,9 +133,21 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-nautical-navy-800">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-nautical-navy-400">
-              &copy; {currentYear} Sun Parlour Boat Club. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center md:items-start space-y-2">
+              <p className="text-sm text-nautical-navy-400">
+                &copy; {currentYear} Sun Parlour Boat Club. All rights reserved.
+              </p>
+              <div className="flex items-center space-x-4 text-xs text-nautical-navy-500">
+                {footerNavigation.legal.map((item, idx) => (
+                  <span key={item.name}>
+                    {idx > 0 && <span className="mr-4">•</span>}
+                    <Link href={item.href} className="hover:text-nautical-navy-300 transition-colors">
+                      {item.name}
+                    </Link>
+                  </span>
+                ))}
+              </div>
+            </div>
             <div className="flex items-center space-x-6 text-sm text-nautical-navy-400">
               <span>Member of I-LYA, AYC & IOBG</span>
             </div>
